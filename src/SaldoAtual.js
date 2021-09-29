@@ -9,7 +9,7 @@ export default function SaldoAtual(){
     <div className="saldo">
       <h2>Olá, seja bem vindo!</h2>
       <h4>Seu saldo atual</h4>
-      <p>{"R$ " + SaldoAtual}</p>
+      <p style={{color:"green", backgroundColor:"white", padding:"0.0rem 0.0rem"}}>{"R$ " + SaldoAtual}</p>
     </div>
     )
 }

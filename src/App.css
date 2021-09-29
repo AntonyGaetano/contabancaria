@@ -4,14 +4,16 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .app{
   display:flex;
   flex-direction:column;
-  width:max-content;
+  width:800px;
   border: 1px solid;
   justify-content:center;
   align-items:center;
   margin-top: 4rem;
+  background-color: #737373;
 }
