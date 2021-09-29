@@ -12,12 +12,12 @@ export default function Header(){
            <div className="box-main">
               <span> 
                 <label>Total Retirado</label>
-                <p style={{color:"red", backgroundColor:"white", padding:"0.3rem 0.2rem"}}>{"R$ " + total_retirado}</p>
+                <p style={{color:"red", backgroundColor:"white", padding:"0.3rem 0.2rem" ,borderRadius:"6px" }}>{"R$ " + total_retirado}</p>
               </span>
              
               <span> 
                 <label>Total Adicionado</label>
-                <p style={{color:"blue", backgroundColor:"white", padding:"0.3rem 0.2rem"}}>{"R$ " + total_adicionado}</p>
+                <p style={{color:"blue", backgroundColor:"white", padding:"0.3rem 0.2rem", borderRadius:"6px"}}>{"R$ " + total_adicionado}</p>
               </span>
            </div>
 
