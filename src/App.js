@@ -9,6 +9,7 @@ var style_app = {
   width:"100%",
   justifyContent:"center",
   alignItems:"center",
+  
 }
 
 function App() {

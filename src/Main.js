@@ -20,7 +20,8 @@ export default function Header(){
                 <p>{total_adicionado}</p>
               </span>
            </div>
-           <div>
+
+           <div className="box-main2">
                <h4>No que você está pensando agora?</h4>
 
                 <div> 

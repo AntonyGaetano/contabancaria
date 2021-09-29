@@ -17,7 +17,7 @@ export default function Header(){
 
     return(
         <section style={styleHeader}>
-          <h3 style={{width:"150px", height:"150px", borderRadius:"50%", backgroundColor:"#ccc",}}></h3>
+          <h3 style={{width:"150px", height:"150px", borderRadius:"50%", backgroundColor:"#ccc"}}></h3>
           <SaldoAtual/>
         </section>
     );

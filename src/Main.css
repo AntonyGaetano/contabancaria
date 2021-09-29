@@ -7,6 +7,7 @@
     background-color:#5E17EB;
     border:1px solid black;
     color:white;
+
     justify-content:space-around;
     align-items:center;
 }
@@ -24,5 +25,17 @@
 .box-main > span > p{
     margin-top: 0.6rem;
     font-size: 1.6rem;
+}
+
+.box-main2 > div{
+   display: flex;
+   margin-top: 1rem;
+   justify-content: space-evenly;
+}
+
+.box-main2 > div > button{
+    width: 80px;
+    height: 30px;
+    text-align: center;
 }
 
