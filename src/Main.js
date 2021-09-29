@@ -1,31 +1,15 @@
-
 import React from "react";
+import "./Main.css";
 
 var total_retirado = 0;
 var total_adicionado = 0;
 
-var style_main = {
-    display:"flex", 
-    width:"70%",
-    height:"300px", 
-    backgroundColor:"#5E17EB",
-    border:"1px solid black",
-    borderLeftTop:"10px",
-    borderRightTop:"10px",
-    color:"white",
-    justifyContent:"space-around",
-    alignItems:"center",
-}
-
-var style_flex = {
-    display:"flex",
-}
 
 export default function Header(){
 
     return(
-        <section style={style_main}>
-           <div style={style_flex}>
+        <section className="main">
+           <div className="box-main">
               <span> 
                 <label>Total Retirado</label>
                 <p>{total_retirado}</p>
@@ -36,7 +20,6 @@ export default function Header(){
                 <p>{total_adicionado}</p>
               </span>
            </div>
-
            <div>
                <h4>No que você está pensando agora?</h4>
 

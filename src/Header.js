@@ -1,7 +1,6 @@
-
 import React from "react";
 import SaldoAtual from "./SaldoAtual";
-
+import "./Header.css"
 
 var styleHeader = {
     display:"flex", 
@@ -18,7 +17,7 @@ export default function Header(){
 
     return(
         <section style={styleHeader}>
-          <h3>Local da foto</h3>
+          <h3 style={{width:"150px", height:"150px", borderRadius:"50%", backgroundColor:"#ccc",}}></h3>
           <SaldoAtual/>
         </section>
     );

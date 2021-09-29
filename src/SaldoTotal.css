@@ -1,0 +1,11 @@
+*{padding:0; margin: 0; box-sizing: border-box;}
+
+
+.saldo{
+  text-align: center;
+}
+
+.saldo > p{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
