@@ -8,7 +8,7 @@ export default function SaldoAtual(){
     <div>
       <h2>Olá, seja bem vindo!</h2>
       <h4>Seu saldo atual</h4>
-      <p>{"R$" + SaldoAtual}</p>
+      <p>{"R$ " + SaldoAtual}</p>
     </div>
     )
 }

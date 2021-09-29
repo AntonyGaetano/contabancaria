@@ -6,12 +6,12 @@ import SaldoAtual from "./SaldoAtual";
 var styleHeader = {
     display:"flex", 
     width:"70%", 
-    height:"250px",
-     backgroundColor:"#737373",
+    height:"220px",
+    backgroundColor:"#737373",
     border:"1px solid black",
-     color:"white",
-     justifyContent:"space-around",
-      alignItems:"center",
+    color:"white",
+    justifyContent:"space-around",
+    alignItems:"center",
 }
 
 export default function Header(){
