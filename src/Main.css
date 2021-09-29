@@ -2,12 +2,12 @@
 
 .main{
     display:flex;
-    width:70%;
+    width:100%;
     height:260px;
     background-color:#5E17EB;
     border:1px solid black;
-    color:white;
-
+    color:#ffffff;
+    padding: 0 0.6rem;
     justify-content:space-around;
     align-items:center;
 }

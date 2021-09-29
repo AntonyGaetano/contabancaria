@@ -1,1 +1,17 @@
 *{padding:0; margin: 0; box-sizing: border-box;}
+ 
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app{
+  display:flex;
+  flex-direction:column;
+  width:max-content;
+  border: 1px solid;
+  justify-content:center;
+  align-items:center;
+  margin-top: 4rem;
+}
