@@ -4,19 +4,16 @@ import Main from "./Main"
 import "./App.css"
 
 
-const Adicionar = ()=>{
-  let valor = prompt("Deu certo de novo");
-  
-}
-
 function App() {
 
-  const[SaldoAtual,setSaldoAtual]=useState(0);
+  const[SaldoAtual,setSaldoAtual] = useState(0);
+  const[SaldoRetirado,setSaldoRetirado] = useState(0)
+  const[SaldoAdicionado,setSaldoAdicionado] = useState(0)
 
   return (
    <section className="app">
-     <Header />
-     <Main funcao={Adicionar} s={SaldoAtual} sa={setSaldoAtual}/>
+     <Header sAt={SaldoAtual} setsAt={setSaldoAtual}/>
+     <Main  sAd={SaldoAdicionado} setsAd={setSaldoAdicionado} sRe={SaldoRetirado} setsRe={setSaldoRetirado}/>
    </section>
   );
 }

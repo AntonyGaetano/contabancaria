@@ -5,14 +5,13 @@ var total_retirado = 0;
 var total_adicionado = 0;
 
 
-
 export default function Main(props){
 
-  const Adicionar = ()=>{
+  const Adicionar = () =>{
     let valor = prompt("Deu certo de novo");
     props.sa(valor);
     total_adicionado = Number(total_adicionado) + Number(props.s);
-    console.log(props.s)
+    console.log(props.s);
   }
 
     return(
