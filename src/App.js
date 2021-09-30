@@ -13,7 +13,7 @@ function App() {
   return (
    <section className="app">
      <Header sAt={SaldoAtual} setsAt={setSaldoAtual}/>
-     <Main  sAd={SaldoAdicionado} setsAd={setSaldoAdicionado} sRe={SaldoRetirado} setsRe={setSaldoRetirado}/>
+     <Main  sAd={SaldoAdicionado} setsAd={setSaldoAdicionado} sRe={SaldoRetirado} setsRe={setSaldoRetirado} setsAt={setSaldoAtual}/>
    </section>
   );
 }

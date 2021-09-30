@@ -9,9 +9,7 @@ export default function Main(props){
 
   const Adicionar = () =>{
     let valor = prompt("Deu certo de novo");
-    props.sa(valor);
-    total_adicionado = Number(total_adicionado) + Number(props.s);
-    console.log(props.s);
+    props.setsAt(valor)
   }
 
     return(
