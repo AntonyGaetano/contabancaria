@@ -2,9 +2,10 @@
 import React from "react";
 import "./SaldoTotal.css"
 
-export default function SaldoAtual(){
+export default function SaldoAtual(props){
 
-    const SaldoAtual = 0.00;
+    const SaldoAtual = props.saldo;
+    
     return(
     <div className="saldo">
       <h2>Olá, seja bem vindo!</h2>

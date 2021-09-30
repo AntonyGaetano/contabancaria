@@ -9,7 +9,8 @@ export default function Main(props){
 
   const Adicionar = () =>{
     let valor = prompt("Deu certo de novo");
-    props.setsAt(valor)
+    props.setsAt(valor);
+    props.setsAd(valor);
   }
 
     return(
