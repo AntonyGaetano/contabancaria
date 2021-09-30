@@ -1,17 +1,24 @@
 import React from "react";
 import "./Main.css";
 
-var total_retirado = 0;
-var total_adicionado = 0;
 
 
 export default function Main(props){
 
+  var total_adicionado = props.sAd;
+  var total_retirado = props.sRe;
+
   const Adicionar = () =>{
-     let valor = prompt("Deu certo de novo");
+     let valor = prompt("Quanto irá adicionar?");
      props.setsAt(valor);
      props.setsAd(valor);
   }
+
+  const Retirar = () =>{
+    let valor = prompt("Quanto irá adicionar?");
+    props.setsRe(valor);
+  }
+
 
     return(
         <section className="main">
@@ -32,7 +39,7 @@ export default function Main(props){
 
                 <div> 
                   <button onClick={()=>Adicionar()} >Adicionar</button>
-                  <button>Retirar</button>
+                  <button onClick={()=>Retirar()}>Retirar</button>
                 </div>
            </div>
         </section>

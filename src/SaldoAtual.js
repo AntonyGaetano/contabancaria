@@ -2,12 +2,13 @@
 import React from "react";
 import "./SaldoTotal.css"
 
-var saldoAtual = 0;
+
 
 export default function SaldoAtual(props){
 
+    var saldoAtual = props.saldoAt;
+    props.setAtual(props.saldoAdd-props.saldoRe); 
 
-    saldoAtual += Number(props.saldo); 
 
     return(
 

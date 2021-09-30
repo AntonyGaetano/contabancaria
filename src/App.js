@@ -10,7 +10,7 @@ const[SaldoAdicionado,setSaldoAdicionado] = useState(0);
 
   return (
    <section className="app">
-     <Header sAt={SaldoAtual} setsAt={setSaldoAtual}/>
+     <Header sAt={SaldoAtual} setsAt={setSaldoAtual} sAd={SaldoAdicionado} sRe={SaldoRetirado}/>
      <Main  sAd={SaldoAdicionado} setsAd={setSaldoAdicionado} sRe={SaldoRetirado} setsRe={setSaldoRetirado} setsAt={setSaldoAtual}/>
    </section>
   );
