@@ -4,8 +4,8 @@ import "./Main.css";
 var total_retirado = 0;
 var total_adicionado = 0;
 
+export default function Main(props){
 
-export default function Header(){
 
     return(
         <section className="main">
@@ -25,7 +25,7 @@ export default function Header(){
                <h4>No que você está pensando agora?</h4>
 
                 <div> 
-                  <button>Adicionar</button>
+                  <button onClick={()=>props.funcao()} >Adicionar</button>
                   <button>Retirar</button>
                 </div>
            </div>
