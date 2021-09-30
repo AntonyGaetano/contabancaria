@@ -4,8 +4,16 @@ import "./Main.css";
 var total_retirado = 0;
 var total_adicionado = 0;
 
+
+
 export default function Main(props){
 
+  const Adicionar = ()=>{
+    let valor = prompt("Deu certo de novo");
+    props.sa(valor);
+    total_adicionado = Number(total_adicionado) + Number(props.s);
+    console.log(props.s)
+  }
 
     return(
         <section className="main">
@@ -25,7 +33,7 @@ export default function Main(props){
                <h4>No que você está pensando agora?</h4>
 
                 <div> 
-                  <button onClick={()=>props.funcao()} >Adicionar</button>
+                  <button onClick={()=>Adicionar()} >Adicionar</button>
                   <button>Retirar</button>
                 </div>
            </div>

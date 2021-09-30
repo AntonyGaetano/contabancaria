@@ -5,18 +5,18 @@ import "./App.css"
 
 
 const Adicionar = ()=>{
-  let nome = prompt("Deu certo de novo");
-  console.log(nome);
+  let valor = prompt("Deu certo de novo");
+  
 }
 
 function App() {
 
- // const[SaldoAtual,setSaldoAtual]=useState(0);
+  const[SaldoAtual,setSaldoAtual]=useState(0);
 
   return (
    <section className="app">
      <Header />
-     <Main funcao={Adicionar}/>
+     <Main funcao={Adicionar} s={SaldoAtual} sa={setSaldoAtual}/>
    </section>
   );
 }
