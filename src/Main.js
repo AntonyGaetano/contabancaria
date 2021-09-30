@@ -7,11 +7,18 @@ export default function Main(props){
 
   var total_adicionado = props.sAd;
   var total_retirado = props.sRe;
+  var valorAtual = 0;
 
   const Adicionar = () =>{
      let valor = prompt("Quanto irá adicionar?");
      props.setsAt(valor);
      props.setsAd(valor);
+     SomaAtual();
+  }
+
+  function SomaAtual(){
+    props.setsAt(Number(valorAtual) + Number(props.sAt));
+    console.log(props.sAt);
   }
 
   const Retirar = () =>{
