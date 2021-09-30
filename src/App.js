@@ -3,12 +3,10 @@ import Header from './Header';
 import Main from "./Main"
 import "./App.css"
 
-
-function App() {
-
-  const[SaldoAtual,setSaldoAtual] = useState(0);
-  const[SaldoRetirado,setSaldoRetirado] = useState(0)
-  const[SaldoAdicionado,setSaldoAdicionado] = useState(0)
+export default function App() {
+const[SaldoAtual,setSaldoAtual] = useState(0);
+const[SaldoRetirado,setSaldoRetirado] = useState(0);
+const[SaldoAdicionado,setSaldoAdicionado] = useState(0);
 
   return (
    <section className="app">
@@ -17,5 +15,3 @@ function App() {
    </section>
   );
 }
-
-export default App;
