@@ -15,6 +15,7 @@ export default function Main(props){
     }
     );
      
+    AtualizaLocalStorage();
   }
 
   const Retirar = () =>{
@@ -24,6 +25,17 @@ export default function Main(props){
       return Number(e) + Number(valor);
     }
      );
+
+     AtualizaLocalStorage();
+  }
+
+  const AtualizaLocalStorage = () =>{
+     
+  localStorage.setItem("TotalAdicionado",props.saldoAdicionado);
+
+  localStorage.setItem("TotalRetirado",props.saldoRetirado);
+
+  localStorage.setItem("TotalAtual",props.saldoAtual);
   }
 
 
