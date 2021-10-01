@@ -10,3 +10,23 @@
     justify-content:space-around;
     align-items:center;
 }
+
+.header > h3{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background-color:#ccc;
+    background-image: url("./img/logo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+@media screen and (max-width:730px) {
+     .header{
+         display: flex;
+         flex-direction: column;
+         height:320px;
+     }
+}

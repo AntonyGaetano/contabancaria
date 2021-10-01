@@ -8,10 +8,10 @@ export default function Main(props){
   
 
   const Adicionar = () =>{
-    let valor = parseInt(prompt("Quanto irá adicionar ?"));
-    
+    var valor = prompt("Quanto irá adicionar ?");
+
     props.setSaldoAdicionado((e)=>{
-     return e + valor;
+     return Number(e) + Number(valor);
     }
     );
      
@@ -41,15 +41,16 @@ export default function Main(props){
 
     return(
         <section className="main">
+           
            <div className="box-main">
               <span> 
                 <label>Total Retirado</label>
-                <p style={{color:"red", backgroundColor:"white", padding:"0.3rem 0.2rem" ,borderRadius:"6px" }}>{"R$ " + total_retirado}</p>
+                <p style={{color:"red", backgroundColor:"white", padding:"0.1rem 0.1rem" ,borderRadius:"6px" }}>{"R$ " + total_retirado}</p>
               </span>
              
               <span> 
                 <label>Total Adicionado</label>
-                <p style={{color:"blue", backgroundColor:"white", padding:"0.3rem 0.2rem", borderRadius:"6px"}}>{"R$ " + total_adicionado}</p>
+                <p style={{color:"blue", backgroundColor:"white", padding:"0.1rem 0.1rem", borderRadius:"6px"}}>{"R$ " + total_adicionado}</p>
               </span>
            </div>
 

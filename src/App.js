@@ -6,7 +6,7 @@ import "./App.css"
 export default function App() {
 const[SaldoAtual,setSaldoAtual] = useState(0);
 const[SaldoRetirado,setSaldoRetirado] = useState(0);
-const[SaldoAdicionado,setSaldoAdicionado] = useState(localStorage.getItem("TotalAdicionado") === "" ? 0 : localStorage.getItem("TotalAdicionado"));
+const[SaldoAdicionado,setSaldoAdicionado] = useState(0);
 
   return (
    <section className="app">
