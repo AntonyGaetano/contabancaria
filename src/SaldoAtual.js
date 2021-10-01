@@ -6,8 +6,8 @@ import "./SaldoTotal.css"
 
 export default function SaldoAtual(props){
 
-    var saldoAtual = props.saldoAt;
-    props.setAtual(props.saldoAdd-props.saldoRe); 
+    var saldoAtual = props.saldoAtual;
+    props.setSaldoAtual(props.saldoAdicionado-props.saldoRetirado); 
 
 
     return(
